@@ -7,7 +7,6 @@ import logo from "../assets/logo.svg";
 export default function Signup() {
   const [phone, setPhone] = useState("");
   const [error] = useState("");
-  const [disable] = useState(true);
 
   function handleSubmit() {
     fetch("http://172.17.232.233:80/otp", {
@@ -61,7 +60,7 @@ export default function Signup() {
               </p>
             )}
 
-            <Link to="/otp" className="mt-8 flex w-full justify-center mt-4">
+            <Link to= {{pathname: "/otp", state: {phone} }} className="mt-8 flex w-full justify-center mt-4">
               <button
                 className="w-full px-10 py-2 mt-2 rounded-md bg-[#82C426] p-4 mt-2"
                 onClick={handleSubmit}
@@ -74,5 +73,6 @@ export default function Signup() {
         </div>
       </div>
     </div>
+    
   );
 }
