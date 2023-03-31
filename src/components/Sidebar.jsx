@@ -2,6 +2,7 @@ import React from "react";
 import Option from "./Options";
 
 import Hamburger from "../assets/Hamburger.svg";
+import Wheat from "../assets/wheat_transparent_crop.png";
 
 export default function Sidebar() {
   return (
@@ -16,25 +17,28 @@ export default function Sidebar() {
           peer-focus:left-0 peer:transition ease-out delay-150 duration-200 lg:transition duration-0 shadow-xl"
       >
         <nav className="p-8 flex flex-col justify-evenly h-screen">
-          <div className="flex fixed top-[3vh] items-center gap-4 pb-4">
-            <img src="#" alt="Logo" />
-            <h2 className="text-2xl text-blue font-bold">STC PORTAL</h2>
+          <div className="flex fixed top-[3vh] items-center pb-4">
+            <img src={Wheat} alt="Logo" className="h-28" />
+            <h2 className="text-[2rem] text-green font-bold">Amruth</h2>
           </div>
           <ul className="flex mx-5 mt-10 flex-col justify-evenly h-[40vh]">
-            <Option label="Home" href="#" />
-            <Option label="Tasks" href="#" />
-            <Option label="Meetings" href="#" />
-            <Option label="Teams" />
-            <Option label="Polls" href="#" />
-            <Option label="Members" href="/membersInformation" />
+            <button className="border-b-2 border-green p-4">
+              <li>Home</li>
+            </button>
+            <button className="border-b-2 border-green p-4">
+              <li>Suggestions</li>
+            </button>
+            <button className="border-b-2 border-green p-4">
+              <li>Stats</li>
+            </button>
           </ul>
-          <ul className="flex flex-col justify-evenly">
-            <Option label="Admin Controls" href="/admin" />
-          </ul>
+
           <div className="flex items-center gap-5 pb-4 md:fixed bottom-[3vh]">
-            <div className="w-8 h-8 rounded-full bg-blue"></div>
-            <h2 className="">Workspace</h2>
-            <img alt="Down Arrow" />
+            <div className="bg-green rounded-md">
+              <button className="p-6">
+                <h3 className="text-off">Contact Distributors</h3>
+              </button>
+            </div>
           </div>
         </nav>
       </div>
