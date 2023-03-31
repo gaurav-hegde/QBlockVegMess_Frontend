@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import wheat from "../assets/wheat_transparent_crop.png";
+import Wheat from "../assets/wheat_transparent_crop.png";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex place-content-center col-span-2">
           <div className="max-w-md flex flex-col place-content-center h-screen">
             <img
-              src={wheat}
+              src={Wheat}
               alt="wheat"
               className="h-[16rem] w-[10rem] place-self-center bg-[#fff5e1]"
             />
