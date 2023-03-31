@@ -1,3 +1,3 @@
-## Krishak
+## Amruth
 
-The frontend code for Krishak a web application for farmers.
+The frontend code for Amruth a web application for farmers.
